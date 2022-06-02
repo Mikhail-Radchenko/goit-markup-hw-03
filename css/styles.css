@@ -6,6 +6,7 @@
   --p-text-color: #757575;
   --background-color: #2f303a;
   --background-button-color: #f5f4fa;
+  --button-hover-focus: #188CE8;
 }
 
 body {
@@ -24,15 +25,15 @@ body {
 
 /* Логотип */
 .logo {
-  font-family: "Releway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo span {
-  font-family: "Releway", sans-serif;
+.accent {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -43,8 +44,8 @@ body {
 .logo:focus {
   color: var(--title-text-color);
 }
-.logo span:hover,
-.logo span:focus {
+.accent:hover,
+.accent:focus {
   color: var(--accent-color);
 }
 /* Site nav */
@@ -71,7 +72,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--p-text-color);
 }
 
 .auth-nav .link:hover,
@@ -82,10 +83,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-
+.site-nav .current {
+    color: var(--accent-color);
+}
 /* Герой */
 /* Секция 1 */
-
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -93,11 +98,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #2f303a;
 }
 .button {
+  font-family: 'Roboto';
   color: var(--prymari-white-color);
-  background-color: var(--accent-color);
+  background-color: var(--button-hover-focus);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -123,7 +128,7 @@ body {
   color: var(--title-text-color);
 }
 
-.item-title > p {
+.items .graf {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -139,6 +144,12 @@ body {
   color: var(--title-text-color);
 }
 /* Секция 4 */
+.section-staff {
+    background-color: var(--p-text-color);
+}
+.staff-list {
+    background-color: var(--prymari-white-color);
+}
 .item-staff {
   font-weight: 500;
   font-size: 16px;
@@ -146,7 +157,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.item-staff > p {
+.item-staff .graff {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -160,15 +171,15 @@ body {
   background-color: var(--background-color);
 }
 .logo-footer {
-  font-family: "Releway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo-footer span {
-  font-family: "Releway", sans-serif;
+.accent-footer {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -179,12 +190,12 @@ body {
 .logo-footer:focus {
   color: var(--prymari-white-color);
 }
-.logo-footer span:hover,
-.logo-footer span:focus {
+.accent-footer:hover,
+.accent-footer:focus {
   color: var(--accent-color);
 }
 
-.footer > li {
+.footer .footer-adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -212,6 +223,7 @@ body {
 
 /* Portfolio */
 .btn-filter {
+  font-family: 'Roboto';
   color: var(--title-text-color);
   background-color: var(--background-button-color);
   font-weight: 500;
@@ -221,6 +233,7 @@ body {
 }
 .btn-filter:hover,
 .btn-filter:focus {
+  font-family: 'Roboto';
   color: var(--prymari-white-color);
   background-color: var(--accent-color);
   font-weight: 500;
@@ -235,7 +248,7 @@ body {
   line-height: 2;
   color: var(--primary-text-color);
 }
-.project-title > p {
+.project-graff {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
