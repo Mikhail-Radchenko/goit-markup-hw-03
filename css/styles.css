@@ -7,6 +7,7 @@
   --background-color: #2f303a;
   --background-button-color: #f5f4fa;
   --button-hover-focus: #188CE8;
+  --background-section-color:#F5F4FA;
 }
 
 body {
@@ -111,7 +112,7 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--accent-color);
+  color: var(--button-hover-focus);
   background-color: var(--prymari-white-color);
   font-weight: 700;
   font-size: 16px;
@@ -145,7 +146,7 @@ body {
 }
 /* Секция 4 */
 .section-staff {
-    background-color: var(--p-text-color);
+    background-color: var(--background-section-color);
 }
 .staff-list {
     background-color: var(--prymari-white-color);
@@ -157,7 +158,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.item-staff .graff {
+.graff {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
