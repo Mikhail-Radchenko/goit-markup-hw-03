@@ -1,3 +1,4 @@
+
 :root {
   --primary-text-color: #212121;
   --title-text-color: #212121;
@@ -6,8 +7,15 @@
   --p-text-color: #757575;
   --background-color: #2f303a;
   --background-button-color: #f5f4fa;
-  --button-hover-focus: #188CE8;
-  --background-section-color:#F5F4FA;
+  --button-hover-focus: #188ce8;
+  --background-section-color: #f5f4fa;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color: var(--prymari-white-color);
 }
 
 body {
@@ -18,10 +26,28 @@ body {
 
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .link {
   text-decoration: none;
+}
+
+/* Хедер */
+/* Main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Логотип */
@@ -49,7 +75,22 @@ body {
 .accent:focus {
   color: var(--accent-color);
 }
+
 /* Site nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+/* Site nav отступы */
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
 
 .site-nav .link {
   font-weight: 500;
@@ -84,15 +125,35 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
+/* Отступы*/
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item {
+  margin-right: 50px;
+}
+.auth-nav .item:last-child {
+  margin-right: 0px;
+}
+
 .site-nav .current {
-    color: var(--accent-color);
+  color: var(--accent-color);
+}
+.page-header {
+  background-color: var(--prymari-white-color);
 }
 /* Герой */
 /* Секция 1 */
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,8 +161,16 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .button {
-  font-family: 'Roboto';
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  text-align: center;
+  font-family: "Roboto";
   color: var(--prymari-white-color);
   background-color: var(--button-hover-focus);
   font-weight: 700;
@@ -121,6 +190,8 @@ body {
 }
 /* Секция 2 */
 .item-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -129,27 +200,90 @@ body {
   color: var(--title-text-color);
 }
 
-.items .graf {
+.graf {
+  margin-top: 0;
+  margin-bottom: 94px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
 }
+
+.advan {
+  display: flex;
+}
+
+.advan .item {
+  min-width: 270px;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.advan .item:last-child {
+  margin-right: 0px;
+}
+
 /* Секция 3 */
+.work {
+  display: flex;
+}
+.work-list {
+  margin-left: auto;
+}
+
+.work-list .img {
+  min-width: 370px;
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.work-list .img-last {
+  margin-right: 0px;
+}
+
 .section-title {
+  text-align: center;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 /* Секция 4 */
+
+.item-staff {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.graff {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.staff {
+  display: flex;
+  margin-left: auto;
+}
+
+.staff .staff-list {
+  display: inline-block;
+  margin-right: 30px;
+}
+.staff .staff-list:last-child {
+  margin-right: 0px;
+}
+
 .section-staff {
-    background-color: var(--background-section-color);
+  background-color: var(--background-section-color);
 }
 .staff-list {
-    background-color: var(--prymari-white-color);
+  margin-bottom: 94px;
+  background-color: var(--prymari-white-color);
 }
 .item-staff {
   font-weight: 500;
@@ -223,8 +357,22 @@ body {
 }
 
 /* Portfolio */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.btn .item {
+  margin-right: 8px;
+}
+
 .btn-filter {
-  font-family: 'Roboto';
+  border-radius: 4px;
+
+  font-family: "Roboto";
   color: var(--title-text-color);
   background-color: var(--background-button-color);
   font-weight: 500;
@@ -232,9 +380,14 @@ body {
   line-height: 1.63;
   cursor: pointer;
 }
+
+.btn-filter:last-child {
+  margin-right: 0px;
+}
+
 .btn-filter:hover,
 .btn-filter:focus {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: var(--prymari-white-color);
   background-color: var(--accent-color);
   font-weight: 500;
