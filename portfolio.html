@@ -9,8 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Хедер -->
     <header class="header">
@@ -21,10 +29,10 @@
           >
           <ul class="site-nav list">
             <li class="header-item">
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="current link">Студия</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="current link">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="header-item"><a href="" class="link">Контакты</a></li>
           </ul>
@@ -42,7 +50,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="filter">
         <div class="container">
           <!-- Фильтры -->
           <h2 hidden>Фильтры</h2>
@@ -65,6 +73,7 @@
           </ul>
 
           <!-- Проекты -->
+
           <h2 hidden>наши проекты</h2>
           <ul class="projects list">
             <li class="project-item">
@@ -74,8 +83,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Технокряк</h3>
-              <p class="project-graff" lang="ru">Веб-сайт</p>
+              <div class="project">
+                <h3 class="project-title">Технокряк</h3>
+                <p class="project-graff" lang="ru">Веб-сайт</p>
+              </div>
             </li>
             <li class="project-item">
               <img
@@ -84,11 +95,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">
-                Постер <span lang="en"> Orlean vs Golden Star </span>
-              </h3>
-              <p class="project-graff" lang="ru">Дизайн</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Постер <span lang="en"> Orlean vs Golden Star </span>
+                </h3>
+                <p class="project-graff" lang="ru">Дизайн</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Seafood.jpg"
@@ -96,11 +110,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">
-                Ресторан <span lang="en"> Seafood</span>
-              </h3>
-              <p class="project-graff" lang="ru">Приложение</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Ресторан <span lang="en"> Seafood</span>
+                </h3>
+                <p class="project-graff" lang="ru">Приложение</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Prime.jpg"
@@ -108,11 +125,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">
-                Проект <span lang="en"> Prime</span>
-              </h3>
-              <p class="project-graff" lang="ru">Маркетинг</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Проект <span lang="en"> Prime</span>
+                </h3>
+                <p class="project-graff" lang="ru">Маркетинг</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Boxes.jpg"
@@ -120,11 +140,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">
-                Проект <span lang="en"> Boxes </span>
-              </h3>
-              <p class="project-graff" lang="ru">Приложение</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Проект <span lang="en"> Boxes </span>
+                </h3>
+                <p class="project-graff" lang="ru">Приложение</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Inspiration-has-no-Borders.jpg"
@@ -132,11 +155,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title" lang="en">
-                Inspiration has no Borders
-              </h3>
-              <p class="project-graff" lang="ru">Веб-сайт</p>
+              <div class="project">
+                <h3 class="project-title" lang="en">
+                  Inspiration has no Borders
+                </h3>
+                <p class="project-graff" lang="ru">Веб-сайт</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Limited-Edition.jpg"
@@ -144,11 +170,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">
-                Издание <span lang="en"> Limited Edition</span>
-              </h3>
-              <p class="project-graff" lang="ru">Дизайн</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Издание <span lang="en"> Limited Edition</span>
+                </h3>
+                <p class="project-graff" lang="ru">Дизайн</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/LAB.jpg"
@@ -156,9 +185,14 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Проект <span lang="en"> LAB</span></h3>
-              <p class="project-graff" lang="ru">Маркетинг</p>
+              <div class="project">
+                <h3 class="project-title">
+                  Проект <span lang="en"> LAB</span>
+                </h3>
+                <p class="project-graff" lang="ru">Маркетинг</p>
+              </div>
             </li>
+
             <li class="project-item">
               <img
                 src="./images/portfolio/Growing-Business.jpg"
@@ -166,8 +200,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title" lang="en">Growing Business</h3>
-              <p class="project-graff" lang="ru">Приложение</p>
+              <div class="project">
+                <h3 class="project-title" lang="en">Growing Business</h3>
+                <p class="project-graff" lang="ru">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -176,28 +212,24 @@
     <!-- Футер -->
     <footer class="page-footer">
       <div class="container">
-        <div class="container-footer">
-          <a lang="en" href="/" class="logo-footer link"
-            >Web<span class="accent-footer">Studio</span></a
-          >
-          <address>
-            <div class="adress-container">
-              <ul class="footer list">
-                <li class="footer-adress">г. Киев, пр-т Леси Украинки, 26,</li>
-                <li>
-                  <a class="link-mail link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="link-tel link" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </address>
-        </div>
+        <a lang="en" href="/" class="logo-footer link"
+          >Web<span class="accent-footer">Studio</span></a
+        >
+        <address>
+          <ul class="footer list">
+            <li class="footer-adress">г. Киев, пр-т Леси Украинки, 26,</li>
+            <li class="footer-mail">
+              <a class="link-mail link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-tel">
+              <a class="link-tel link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

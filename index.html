@@ -9,8 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Хедер -->
     <header class="header">
@@ -44,18 +52,17 @@
 
     <main>
       <!-- Герой -->
+
       <!-- Секция 1 -->
       <section class="hero">
         <div class="container">
-          <div class="hero-container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
-          </div>
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button">Заказать услугу</button>
         </div>
       </section>
-      <!-- Секция 2 -->
 
-      <section class="section">
+      <!-- Секция 2 -->
+      <section class="section-graf">
         <div class="container">
           <h2 hidden>наши преимущества</h2>
           <ul class="advan list">
@@ -90,8 +97,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Секция 3 -->
-      <section class="section">
+      <section class="section-work">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work list">
@@ -125,83 +133,86 @@
           </ul>
         </div>
       </section>
+
       <!--Секция 4  -->
       <section class="section-staff">
         <div class="container">
-          <div class="container-staff">
-            <h2 class="section-title">Наша команда</h2>
-
-            <ul class="staff list">
-              <li class="staff-list">
-                <img
-                  src="./images/image-1-section-4.jpg"
-                  alt="Фото Игоря Демьяненко"
-                  width="270"
-                  height="260"
-                />
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="staff list">
+            <li class="staff-list">
+              <img
+                src="./images/image-1-section-4.jpg"
+                alt="Фото Игоря Демьяненко"
+                width="270"
+                height="260"
+              />
+              <div class="people">
                 <h3 class="item-staff">Игорь Демьяненко</h3>
                 <p class="graff" lang="en">Product Designer</p>
-              </li>
-              <li class="staff-list">
-                <img
-                  src="./images/image-2-section-4.jpg"
-                  alt="Фото Ольги Репиной"
-                  width="270"
-                  height="260"
-                />
+              </div>
+            </li>
+            <li class="staff-list">
+              <img
+                src="./images/image-2-section-4.jpg"
+                alt="Фото Ольги Репиной"
+                width="270"
+                height="260"
+              />
+              <div class="people">
                 <h3 class="item-staff">Ольга Репина</h3>
                 <p class="graff" lang="en">Frontend Developer</p>
-              </li>
-              <li class="staff-list">
-                <img
-                  src="./images/image-3-section-4.jpg"
-                  alt="Фото Николая Тарасова"
-                  width="270"
-                  height="260"
-                />
+              </div>
+            </li>
+            <li class="staff-list">
+              <img
+                src="./images/image-3-section-4.jpg"
+                alt="Фото Николая Тарасова"
+                width="270"
+                height="260"
+              />
+              <div class="people">
                 <h3 class="item-staff">Николай Тарасов</h3>
                 <p class="graff" lang="en">Marketing</p>
-              </li>
-              <li class="staff-list">
-                <img
-                  src="./images/image-4-section-4.jpg"
-                  alt="Фото Михаила Ермакова"
-                  width="270"
-                  height="260"
-                />
+              </div>
+            </li>
+            <li class="staff-list">
+              <img
+                src="./images/image-4-section-4.jpg"
+                alt="Фото Михаила Ермакова"
+                width="270"
+                height="260"
+              />
+              <div class="people">
                 <h3 class="item-staff">Михаил Ермаков</h3>
                 <p class="graff" lang="en">UI Designer</p>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
+
     <!-- Футер -->
     <footer class="page-footer">
       <div class="container">
-        <div class="container-footer">
-          <a lang="en" href="/" class="logo-footer link"
-            >Web<span class="accent-footer">Studio</span></a
-          >
-          <address>
-            <div class="adress-container">
-              <ul class="footer list">
-                <li class="footer-adress">г. Киев, пр-т Леси Украинки, 26,</li>
-                <li>
-                  <a class="link-mail link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="link-tel link" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </address>
-        </div>
+        <a lang="en" href="/" class="logo-footer link"
+          >Web<span class="accent-footer">Studio</span></a
+        >
+        <address>
+          <ul class="footer list">
+            <li class="footer-adress">г. Киев, пр-т Леси Украинки, 26,</li>
+            <li class="footer-mail">
+              <a class="link-mail link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-tel">
+              <a class="link-tel link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

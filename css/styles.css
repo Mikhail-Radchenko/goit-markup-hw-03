@@ -45,9 +45,6 @@ button {
 
 a {
   color: currentColor;
-  display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 9px;
 }
 
 address {
@@ -97,6 +94,8 @@ img {
 
 .site-nav .link {
   display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -115,6 +114,8 @@ img {
 }
 
 .auth-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,6 +146,9 @@ img {
 }
 
 .logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
 }
 
@@ -167,20 +171,22 @@ img {
 
 /* Герой */
 /* Секция 1 */
-.hero-container {
+.hero {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 218px;
-  padding-bottom: 182px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
+}
+
+.hero .container {
+  max-width: 696px;
 }
 
 .hero-title {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  margin-left: 237px;
-  margin-right: 237px;
   text-align: center;
   font-weight: 900;
   font-size: 44px;
@@ -215,8 +221,12 @@ img {
 }
 
 /* Секция 2 */
+
+.section-graf {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .item-title {
-  margin-top: 94px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -228,7 +238,7 @@ img {
 
 .graf {
   margin-top: 0;
-  margin-bottom: 94px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -249,7 +259,12 @@ img {
 .advan .item:last-child {
   margin-right: 0px;
 }
+
 /* Секция 3 */
+
+.section-work {
+  padding-bottom: 94px;
+}
 .section-title {
   display: block;
   margin-bottom: 50px;
@@ -262,7 +277,6 @@ img {
 }
 
 .work {
-  margin-right: 30px;
   display: flex;
 }
 .work-item {
@@ -273,18 +287,24 @@ img {
 }
 
 /* Секция 4 */
-.container-staff {
+
+.section-staff {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-section-color);
+}
+
+.people {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .item-staff {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .graff {
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -302,7 +322,6 @@ img {
 }
 
 .staff-list {
-  margin-bottom: 94px;
   background-color: var(--prymari-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -325,8 +344,13 @@ img {
 
 /* Футер */
 
-.container-footer {
+.page-footer {
   background-color: var(--background-color);
+}
+
+.page-footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -384,27 +408,19 @@ img {
 
 .logo-footer.link {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  margin-right: 1240px;
-}
-.footer {
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.link-mail {
-  padding: 0px;
-  margin-top: 9px;
+.footer-adress {
+  margin-bottom: 9px;
 }
-.link-tel {
-  padding: 0px;
-  margin-top: 9px;
-  margin-bottom: 60px;
+
+.footer-mail {
+  margin-bottom: 9px;
 }
-.adress-container {
-  display: flex;
-}
+
 /* Portfolio */
+
 .btn-filter {
   display: inline-block;
   font-family: "Roboto";
@@ -417,8 +433,6 @@ img {
   line-height: 1.63;
   cursor: pointer;
   opacity: 1;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 .btn-filter:hover,
@@ -444,10 +458,12 @@ img {
   line-height: 1.88;
   color: var(--p-text-color);
 }
-
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .btn {
   display: flex;
-  margin-top: 94px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -464,19 +480,24 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
+  margin: -15px;
 }
 
+/* .flex-element {
+  width: 370px;
+  margin: 15px;
+} */
+
 .project-item {
+  width: 370px;
+  margin: 15px;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
 
-.project-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
-.project-item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+.project {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
